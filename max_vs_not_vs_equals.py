@@ -33,8 +33,7 @@ def method_2(group_list):
 
 def method_3(group_list):
     for group in group_list:
-        group_length = len(group)
-        total = max(group_length - 1, 0) * 5
+        total = max(len(group) - 1, 0) * 5
     return total
 
 methods = {1: method_1, 2: method_2, 3: method_3}
