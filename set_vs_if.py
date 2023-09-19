@@ -13,6 +13,8 @@ Attributes:
     TEST_LIST (list of str): The actual test list populated with repeated characters.
     res (dict): Dictionary populated with unique items from TEST_LIST as keys.
 
+RESULT:
+    - Set solution is much faster (about 5x)
 """
 
 from time import perf_counter
@@ -44,5 +46,4 @@ end = perf_counter()
 r2 = end - start
 print(r2)
 
-# Set solution is expected to be much faster (about 5x)
 print(f"Difference list/set {round(r1/r2, 1)}x")
