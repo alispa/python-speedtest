@@ -1,8 +1,3 @@
-import json
-import ujson
-import orjson
-from time import time
-
 """
 Check json vs ujson lib speed.
 RESULT:
@@ -13,6 +8,12 @@ RESULT:
         - ujson lib about 1,9x faster. ## winner
         - orjson lib about 1,5x faster.
 """
+
+import json
+import ujson
+import orjson
+from time import time
+
 
 DATA_INNER = {"1": 1, "2": 2, "3": 3}
 RANGE = 1000000
